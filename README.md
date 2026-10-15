@@ -1,0 +1,2 @@
+# Aviutl2_Plugin_TelopGenerator
+テロップ自動生成機能を追加するプラグインです。
