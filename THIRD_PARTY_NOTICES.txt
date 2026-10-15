@@ -1,0 +1,70 @@
+THIRD PARTY NOTICES  -  テロップ自動生成 (TelopGenerator)
+
+This package includes the following third-party models and libraries.
+Each of them is distributed under the MIT License. The copyright holders
+and sources are listed below. The MIT License text that applies to all of
+them is given at the end of this file.
+
+本パッケージには、次の第三者のモデル・ライブラリが含まれています。
+いずれも MIT ライセンスで公開されています。著作権者と配布元を以下に示します。
+共通の MIT ライセンス文は、このファイルの末尾にあります。
+
+------------------------------------------------------------------------
+1. Whisper (model) / whisper.cpp / ggml
+   File     : models/ggml-large-v3-q5_0.bin
+   Purpose  : Speech recognition (文字起こし)
+   Authors  : OpenAI (Whisper), The ggml authors (whisper.cpp, ggml)
+   Source   : https://huggingface.co/ggerganov/whisper.cpp
+              https://github.com/ggml-org/whisper.cpp
+   License  : MIT
+   Note     : Converted and quantized to the ggml format.
+
+2. Silero VAD
+   File     : models/ggml-silero-v5.1.2.bin
+   Purpose  : Voice activity detection (無音検出)
+   Authors  : Silero Team
+   Source   : https://github.com/snakers4/silero-vad
+              https://huggingface.co/ggml-org/whisper-vad
+   License  : MIT
+   Note     : Converted to the ggml format by ggml-org.
+
+3. Ultimate Vocal Remover (UVR) MDX-Net model
+   File     : models/UVR-MDX-NET-Voc_FT.onnx
+   Purpose  : Vocal extraction (声の抽出)
+   Authors  : Ultimate Vocal Remover and its developers
+              (Anjok07, aufr33, and contributors)
+   Source   : https://github.com/Anjok07/ultimatevocalremovergui
+              https://github.com/TRvlvr/model_repo/releases/tag/all_public_uvr_models
+   License  : MIT
+   Note     : The UVR repository asks third-party application developers
+              who use its models to honor the MIT license by providing
+              credit to UVR and its developers.
+
+4. ONNX Runtime
+   Purpose  : Running the ONNX model (声の抽出の実行)
+   Authors  : Microsoft Corporation
+   Source   : https://github.com/microsoft/onnxruntime
+   License  : MIT
+   Note     : See also the LICENSE and ThirdPartyNotices.txt files
+              distributed with ONNX Runtime.
+
+------------------------------------------------------------------------
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
